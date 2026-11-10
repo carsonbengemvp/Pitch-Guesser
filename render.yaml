@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: pitch-guesser
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/config
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
