@@ -11,7 +11,7 @@ Everything runs inside ONE app window. Pick your settings on the start screen:
   Format
     Classic        10 rounds
     Time Trial     as many rounds as you can before the clock runs out (the clock pauses while a round loads)
-  Season           any year from 2008 on, or "All years" (random)
+  Season           any year from 2021 on, or "All years" (random)
 
 The mystery pitch is always a swing or a called strike. The strike zone is drawn from the
 PITCHER'S view (from the mound). Hover a dot to see that pitch's details.
@@ -53,8 +53,7 @@ CLIP_SECONDS = 3.0       # how much of the pitch video you get to see
 MIN_PITCHES_IN_GAME = 45 # pitcher must have thrown at least this many that day
 LOC_ZERO_FT = 1.25       # location guess this far (feet) from the pitch = 0 location points
 PREFETCH = 2             # rounds loaded in the background while you play
-MIN_YEAR = 2008          # earliest pitch-tracking season on Baseball Savant
-NO_VIDEO_LIMIT = 8       # give up on a season after this many pitches in a row with no video
+MIN_YEAR = 2021         
 
 _today = dt.date.today()
 MAX_YEAR = _today.year if _today.month >= 4 else _today.year - 1
